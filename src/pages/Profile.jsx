@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import Sea from '../assets/colors.jpg';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
-import HeroText from './Typography/HeroText';
+import HeroText from '../components/Typography/HeroText';
 
 function Profile() {
 	const theme = useTheme();

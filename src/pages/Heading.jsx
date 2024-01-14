@@ -1,8 +1,8 @@
 import { Box } from '@mui/material';
 import Sea from '../assets/img100.jpg';
-import NavBar from './NavBar/NavBar';
+import NavBar from '../components/NavBar/NavBar';
 import Mouse from './Mouse';
-import HeroText from './Typography/HeroText';
+import HeroText from '../components/Typography/HeroText';
 function Heading() {
 	return (
 		<Box
