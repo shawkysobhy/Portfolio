@@ -1,6 +1,6 @@
-import Heading from './components/Heading';
-import Profile from './components/Profile';
-import Skills from './components/Skills';
+import Heading from './pages/Heading'
+import Profile from './pages/Profile'
+import Skills from './pages/Skills'
 function App() {
 	return (
 		<>
