@@ -67,15 +67,14 @@ function Profile() {
 							Based in the Egypt
 						</span>
 						, I&apos;m a front-end developer passionate about building
-						accessible web apps that users love. I&apos;m a Frontend Web
-						Developer building the Front-end of Websites and Web Applications{' '}
+						accessible web apps that users love, Websites and Web Applications{' '}
 						<span
 							style={{
 								fontWeight: '700',
 								color: '#087ea4',
 								backgroundColor: '#f6f7f9',
 							}}>
-							especially in React
+							especially in React and it's ecosystem
 						</span>{' '}
 						that leads to the success of the overall product I&apos;m open to
 						Job opportunities where I can contribute, learn and grow. If you
@@ -105,7 +104,7 @@ function Profile() {
 								paddingBottom: '10px',
 								borderBottom: 'solid 5px #087ea4',
 							}}>
-							Education : Benha Faculty of Computers and Artificial Intelligence
+							Education : Benha Faculty of Computers and Artificial Intelligence(2019-2023)
 						</span>
 					</Typography>
 				</Box>
