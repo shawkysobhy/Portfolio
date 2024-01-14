@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import SkillsBackground from '../assets/skills33.jpg';
+import SkillsBackground from '../assets/skills.jpg';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import HeroText from '../components/Typography/HeroText';

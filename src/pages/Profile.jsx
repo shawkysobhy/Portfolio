@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import Sea from '../assets/colors.jpg';
+import ProfileBackground from '../assets/profile.jpg';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import HeroText from '../components/Typography/HeroText';
@@ -11,14 +11,13 @@ function Profile() {
 	return (
 		<Box
 			sx={{
-				
 				position: 'sticky',
 				top: '0%',
 				minHeight: '100vh',
 				display: 'flex',
 				flexDirection: 'column',
 				marginInline: 'auto',
-				backgroundImage: `url(${Sea})`,
+				backgroundImage: `url(${ProfileBackground})`,
 				backgroundSize: 'cover',
 				backgroundRepeat: 'no-repeat',
 				backgroundAttachment: 'fixed',

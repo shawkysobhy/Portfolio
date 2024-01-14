@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
-import Sea from '../assets/img100.jpg';
+import HeadingBackground from '../assets/heading.jpg';
 import NavBar from '../components/NavBar/NavBar';
-import Mouse from './Mouse';
+import Mouse from '../components/MouseAnimation';
 import HeroText from '../components/Typography/HeroText';
 function Heading() {
 	return (
@@ -13,7 +13,7 @@ function Heading() {
 				display: 'flex',
 				flexDirection: 'column',
 				marginInline: 'auto',
-				backgroundImage: `url(${Sea})`,
+				backgroundImage: `url(${HeadingBackground})`,
 				backgroundSize: 'cover',
 				backgroundRepeat: 'no-repeat',
 				backgroundAttachment: 'fixed',

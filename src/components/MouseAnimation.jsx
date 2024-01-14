@@ -1,5 +1,4 @@
-/* eslint-disable react/no-unknown-property */
-function Mouse() {
+function MouseAnimation() {
 	return (
 		<div>
 			<svg
@@ -36,4 +35,4 @@ function Mouse() {
 	);
 }
 
-export default Mouse;
+export default MouseAnimation;

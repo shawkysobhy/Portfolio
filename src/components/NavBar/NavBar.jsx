@@ -1,8 +1,5 @@
-/* eslint-disable no-unused-vars */
-import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
-
-import { Typography, ListItem, Box, List, Link } from '@mui/material';
+import { Typography, Box, List, Link } from '@mui/material';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -24,7 +21,6 @@ const StyledLink = styled(Link)`
 `;
 function NavBar() {
 	const theme = useTheme();
-	const smScreen = useMediaQuery(theme.breakpoints.down('500px'));
 
 	return (
 		<Box
