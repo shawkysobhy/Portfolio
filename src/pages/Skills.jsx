@@ -3,17 +3,17 @@ import SkillsBackground from '../assets/skills.jpg';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import HeroText from '../components/Typography/HeroText';
-import InfiniteLooper from '../components/InfiniteLooper';
-import SkillsTypography from '../components/Typography/SkillsTypography';
+import InfiniteLooper from '../components/InfiniteLoop/InfiniteLooper';
+import SkillsTypography from '../components/Skills/SkillsTypography';
 import CustomDot from '../components/Typography/CustomDot';
-import Js from '../assets/skills-svgs/js.svg'
-import Ts from '../assets/skills-svgs/ts.svg'
-import Redux from '../assets/skills-svgs/redux.svg'
-import Mui from '../assets/skills-svgs/mui.svg'
-import Css from '../assets/skills-svgs/css.svg'
-import Github from '../assets/skills-svgs/github.svg'
-import Html from '../assets/skills-svgs/html.svg'
-import Tailwind from '../assets/skills-svgs/tailwind.svg'
+import Js from '../assets/skills-svgs/js.svg';
+import Ts from '../assets/skills-svgs/ts.svg';
+import Redux from '../assets/skills-svgs/redux.svg';
+import Mui from '../assets/skills-svgs/mui.svg';
+import Css from '../assets/skills-svgs/css.svg';
+import Github from '../assets/skills-svgs/github.svg';
+import Html from '../assets/skills-svgs/html.svg';
+import Tailwind from '../assets/skills-svgs/tailwind.svg';
 import SkillIconContainer from '../components/Skills/SkillIconContainer';
 function Skills() {
 	const theme = useTheme();
