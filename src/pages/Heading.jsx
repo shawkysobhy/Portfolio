@@ -2,7 +2,9 @@ import { Box } from '@mui/material';
 import NavBar from '../components/NavBar/NavBar';
 import Mouse from '../components/MouseAnimation';
 import HeroText from '../components/Typography/HeroText';
+import { useTheme } from '@emotion/react';
 function Heading() {
+	const theme = useTheme();
 	return (
 		<Box
 			sx={{
@@ -10,14 +12,10 @@ function Heading() {
 				display: 'flex',
 				flexDirection: 'column',
 				marginInline: 'auto',
+				width: '100vw',
+				maxWidth: '100%',
 			}}>
-			<Box
-				sx={{
-					width: '100vw',
-					maxWidth: '100%',
-				}}>
 				<NavBar />
-			</Box>
 			<Box
 				sx={{
 					flex: '1',
@@ -31,7 +29,7 @@ function Heading() {
 					Nice to meet you! I&apos;m{' '}
 					<span
 						style={{
-							textDecoration: 'underline 10px #087ea4',
+							textDecoration: `underline 10px ${theme.palette.pink.main} `,
 						}}>
 						Shawky Sobhy
 					</span>

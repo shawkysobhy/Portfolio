@@ -37,8 +37,8 @@ const ScrollPercentageCalculator = ({ children }) => {
 	return (
 		<div>
 			<div style={circleStyles}>
-				<span style={{ color: 'black', fontSize: '18px',fontWeight:'500',paddingInline:'15px' }}>
-					{Math.ceil(scrollPercentage.toFixed(2))}%
+				<span style={{ color: 'black', fontSize: '18px',fontWeight:'500',paddingInline:'5px' }}>
+					{scrollPercentage.toFixed(2)}%
 				</span>
 			</div>
 			{children}

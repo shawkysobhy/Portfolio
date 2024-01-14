@@ -18,15 +18,6 @@ function Profile() {
 					overflow: 'auto',
 					paddingBlock: '2rem',
 					flex: '1',
-					backdropFilter: 'blur(8px) brightness(.8)',
-					scrollbarWidth: 'thin', // For Firefox
-					scrollbarColor: 'transparent transparent', // For Firefox
-					'&::-webkit-scrollbar': {
-						width: '0.4em', // For WebKit browsers
-					},
-					'&::-webkit-scrollbar-thumb': {
-						backgroundColor: 'transparent', // For WebKit browsers
-					},
 				}}>
 				<Box
 					sx={{
@@ -42,8 +33,8 @@ function Profile() {
 					<Typography
 						sx={{
 							'::selection': {
-								color: '#087ea4',
-								backgroundColor: '#f6f7f9',
+								color: theme.palette.purple.main,
+								backgroundColor: theme.palette.selection.main,
 							},
 							paddingInline: '15px',
 							width: '85%',
@@ -60,8 +51,8 @@ function Profile() {
 							style={{
 								fontWeight: '700',
 								':selection': {
-									color: '#087ea4',
-									backgroundColor: '#f6f7f9',
+									color: theme.palette.purple.main,
+									backgroundColor: theme.palette.selection.main,
 								},
 							}}>
 							Based in the Egypt
@@ -74,7 +65,7 @@ function Profile() {
 								color: '#087ea4',
 								backgroundColor: '#f6f7f9',
 							}}>
-							especially in React and it's ecosystem
+							especially in React and it&apos;s ecosystem
 						</span>{' '}
 						that leads to the success of the overall product I&apos;m open to
 						Job opportunities where I can contribute, learn and grow. If you
@@ -84,8 +75,8 @@ function Profile() {
 					<Typography
 						sx={{
 							'::selection': {
-								color: '#087ea4',
-								backgroundColor: '#f6f7f9',
+								color: theme.palette.purple.main,
+								backgroundColor: theme.palette.selection.main,
 							},
 							paddingInline: '15px',
 							width: '85%',
@@ -102,9 +93,10 @@ function Profile() {
 						<span
 							style={{
 								paddingBottom: '10px',
-								borderBottom: 'solid 5px #087ea4',
+								borderBottom: `solid 5px ${theme.palette.pink.main}`,
 							}}>
-							Education : Benha Faculty of Computers and Artificial Intelligence(2019-2023)
+							Education : Benha Faculty of Computers and Artificial Intelligence
+							(2019-2023)
 						</span>
 					</Typography>
 				</Box>

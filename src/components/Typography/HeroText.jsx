@@ -6,8 +6,8 @@ function HeroText({ children, customsx }) {
 		<Typography
 			sx={{
 				'::selection': {
-					color: '#087ea4',
-					backgroundColor: '#f6f7f9',
+					color: theme.palette.purple.main,
+					backgroundColor: theme.palette.selection.main,
 				},
 				paddingInline: '15px',
 				color: 'white',
