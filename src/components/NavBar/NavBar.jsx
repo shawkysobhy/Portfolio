@@ -14,7 +14,7 @@ const IconStyle = {
 };
 const StyledLink = styled(Link)`
 	text-decoration: none;
-	color: inherit; /* Inherit the color from the parent */
+	color: inherit; 
 	&:hover {
 		color: #e36588;
 	}
@@ -38,7 +38,7 @@ function NavBar() {
 				},
 			}}>
 			<Typography
-				sx={{ fontSize: '32px', textAlign: 'center', fontWeight: '700' }}>
+				sx={{ fontSize: '32px', textAlign: 'center', fontWeight: '700',color:'white' }}>
 				ShawkySobhy
 			</Typography>
 			<List sx={{ display: 'flex' }}>

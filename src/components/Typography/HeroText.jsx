@@ -5,6 +5,10 @@ function HeroText({ children, customsx }) {
 	return (
 		<Typography
 			sx={{
+				'::selection': {
+					color: '#087ea4',
+					backgroundColor: '#f6f7f9',
+				},
 				paddingInline: '15px',
 				color: 'white',
 				fontSize: '88px',
@@ -13,7 +17,12 @@ function HeroText({ children, customsx }) {
 				width: '85%',
 				...customsx,
 				[theme.breakpoints.down('md')]: {
-					fontSize: '60px',
+					fontSize: '64px',
+					width: '100%',
+				},
+				[theme.breakpoints.down('sm')]: {
+					fontSize: '45px',
+					textAlign: 'center',
 				},
 			}}>
 			{children}

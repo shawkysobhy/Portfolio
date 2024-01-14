@@ -1,7 +1,8 @@
-import { Box } from '@mui/material';
-import { skillsList } from '../Mock/skillsList';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import { Box, useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import { skillsList } from '../Mock/skillsList';
+import SkillIconContainer from '../components/Skills/SkillIconContainer';
+import SkillsList from '../components/Skills/SkillsList';
 import HeroText from '../components/Typography/HeroText';
 import InfiniteLooper from '../components/InfiniteLoop/InfiniteLooper';
 import Js from '../assets/skills-svgs/js.svg';
@@ -12,8 +13,6 @@ import Css from '../assets/skills-svgs/css.svg';
 import Github from '../assets/skills-svgs/github.svg';
 import Html from '../assets/skills-svgs/html.svg';
 import Tailwind from '../assets/skills-svgs/tailwind.svg';
-import SkillIconContainer from '../components/Skills/SkillIconContainer';
-import SkillsList from '../components/Skills/SkillsList';
 function Skills() {
 	const theme = useTheme();
 	const mdScreen = useMediaQuery(theme.breakpoints.down('md'));
@@ -24,6 +23,7 @@ function Skills() {
 				display: 'flex',
 				flexDirection: 'column',
 				marginInline: 'auto',
+				maxWidth: '1200px',
 			}}>
 			<Box
 				sx={{
@@ -33,7 +33,6 @@ function Skills() {
 				}}>
 				<Box
 					sx={{
-						maxWidth: '1200px',
 						marginInline: 'auto',
 						display: 'flex',
 						flexDirection: 'column',

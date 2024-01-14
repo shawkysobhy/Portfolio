@@ -7,6 +7,7 @@ function NavBarItem({ children }) {
 		<ListItem
 			sx={{
 				padding: '8px 16px',
+				color: 'white',
 				[theme.breakpoints.down('xmd')]: {
 					padding: '8px',
 				},

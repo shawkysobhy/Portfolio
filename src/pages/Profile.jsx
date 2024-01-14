@@ -1,27 +1,17 @@
 import { Box, Typography } from '@mui/material';
-import ProfileBackground from '../assets/profile.jpg';
-import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import HeroText from '../components/Typography/HeroText';
 
 function Profile() {
 	const theme = useTheme();
-	const mdScreen = useMediaQuery(theme.breakpoints.down('md'));
-
 	return (
 		<Box
 			sx={{
-				position: 'sticky',
-				top: '0%',
 				minHeight: '100vh',
 				display: 'flex',
 				flexDirection: 'column',
 				marginInline: 'auto',
-				backgroundImage: `url(${ProfileBackground})`,
-				backgroundSize: 'cover',
-				backgroundRepeat: 'no-repeat',
-				backgroundAttachment: 'fixed',
-				backgroundPosition: 'center',
+				maxWidth: '1200px',
 			}}>
 			<Box
 				sx={{
@@ -40,11 +30,13 @@ function Profile() {
 				}}>
 				<Box
 					sx={{
-						maxWidth: '1200px',
 						marginInline: 'auto',
 						display: 'flex',
 						flexDirection: 'column',
-						alignItems: mdScreen ? 'center' : 'flex-start',
+						alignItems: 'flex-start',
+						[theme.breakpoints.down('md')]: {
+							alignItems: 'center',
+						},
 					}}>
 					<HeroText>Nice to meet you! I&apos;m Shawky Sobhy.</HeroText>
 					<Typography
