@@ -7,7 +7,7 @@ import InfiniteLooper from './InfiniteLooper';
 import SkillsTypography from './Typography/SkillsTypography';
 import CustomDot from './CustomDot';
 import Js from '../assets/skills-svgs/js.svg'
-import Ts from '../assets/skills-svgs/Ts.svg'
+import Ts from '../assets/skills-svgs/ts.svg'
 import Redux from '../assets/skills-svgs/redux.svg'
 import Mui from '../assets/skills-svgs/mui.svg'
 import Css from '../assets/skills-svgs/css.svg'
