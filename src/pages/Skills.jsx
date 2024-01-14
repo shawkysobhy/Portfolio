@@ -19,7 +19,6 @@ function Skills() {
 	return (
 		<Box
 			sx={{
-				minHeight: '100vh',
 				display: 'flex',
 				flexDirection: 'column',
 				marginInline: 'auto',
@@ -27,7 +26,6 @@ function Skills() {
 			}}>
 			<Box
 				sx={{
-					overflow: 'auto',
 					flex: '1',
 					backdropFilter: 'blur(3px) brightness(.8) ',
 				}}>

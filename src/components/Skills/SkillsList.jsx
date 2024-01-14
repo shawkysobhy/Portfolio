@@ -1,6 +1,5 @@
 import { Box } from '@mui/material';
 import SkillsTypography from './SkillsTypography';
-import CustomDot from '../Typography/CustomDot';
 function SkillsList({ skills }) {
 	return (
 		<Box
@@ -12,10 +11,7 @@ function SkillsList({ skills }) {
 				alignItems: 'center',
 			}}>
 			{skills.map((skill) => (
-				<>
-					<SkillsTypography>{skill}</SkillsTypography>
-					<CustomDot />
-				</>
+				<SkillsTypography key={skill}>{skill}</SkillsTypography>
 			))}
 		</Box>
 	);
