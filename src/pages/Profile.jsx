@@ -33,7 +33,7 @@ function Profile() {
 					<Typography
 						sx={{
 							'::selection': {
-								color: theme.palette.purple.main,
+								color: theme.palette.gray.main,
 								backgroundColor: theme.palette.selection.main,
 							},
 							paddingInline: '15px',
@@ -51,7 +51,7 @@ function Profile() {
 							style={{
 								fontWeight: '700',
 								':selection': {
-									color: theme.palette.purple.main,
+									color: theme.palette.gray.main,
 									backgroundColor: theme.palette.selection.main,
 								},
 							}}>
@@ -75,7 +75,7 @@ function Profile() {
 					<Typography
 						sx={{
 							'::selection': {
-								color: theme.palette.purple.main,
+								color: theme.palette.gray.main,
 								backgroundColor: theme.palette.selection.main,
 							},
 							paddingInline: '15px',
@@ -93,7 +93,7 @@ function Profile() {
 						<span
 							style={{
 								paddingBottom: '10px',
-								borderBottom: `solid 5px ${theme.palette.pink.main}`,
+								borderBottom: `solid 5px ${theme.palette.yellow.main}`,
 							}}>
 							Education : Benha Faculty of Computers and Artificial Intelligence
 							(2019-2023)

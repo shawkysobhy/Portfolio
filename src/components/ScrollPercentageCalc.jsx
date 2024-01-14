@@ -9,15 +9,14 @@ const ScrollPercentageCalculator = ({ children }) => {
 		const percentage = (scrollTop / totalHeight) * 100;
 		setScrollPercentage(percentage);
 	};
-	const [circleStyles, setCircleStyles] = useState({
+	const [lineStyle, setLineStyle] = useState({
 		width: '100%',
 		height: '20px',
-    position:'fixed',
-    display:'flex',
-    alignItems:'center',
-    zIndex:'100',
+		position: 'fixed',
+		display: 'flex',
+		alignItems: 'center',
+		zIndex: '100',
 		backgroundColor: 'whitesmoke',
-    
 	});
 
 	useEffect(() => {
@@ -28,7 +27,7 @@ const ScrollPercentageCalculator = ({ children }) => {
 	}, []); 
 	useEffect(() => {
 		const newSize = `${Math.min(100, Math.max(0, scrollPercentage))}%`;
-		setCircleStyles((prevStyles) => ({
+		setLineStyle((prevStyles) => ({
 			...prevStyles,
 			width: newSize,
 		}));
@@ -36,7 +35,7 @@ const ScrollPercentageCalculator = ({ children }) => {
 
 	return (
 		<div>
-			<div style={circleStyles}>
+			<div style={lineStyle}>
 				<span style={{ color: 'black', fontSize: '18px',fontWeight:'500',paddingInline:'5px' }}>
 					{scrollPercentage.toFixed(2)}%
 				</span>

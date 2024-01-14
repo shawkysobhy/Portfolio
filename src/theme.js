@@ -6,11 +6,11 @@ const theme = createTheme({
 		primary: {
 			main: '#ffffff',
 		},
-		pink: {
-			main: '#f72585',
+		yellow: {
+			main: '#00b6d3',
 		},
-		purple: {
-			main: '#4d2f72',
+		gray: {
+			main: '#2a2e34',
 		},
 		selection: {
 			main: '#f6f7f9',

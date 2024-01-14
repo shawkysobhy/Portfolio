@@ -1,7 +1,7 @@
 import Heading from './pages/Heading';
 import Profile from './pages/Profile';
 import Skills from './pages/Skills';
-import HeadingBackground from './assets/heading1.jpg';
+import HeadingBackground from './assets/sh100.jpg';
 import Projects from './pages/Projects';
 import { Box } from '@mui/material';
 import ScrollPercentageCalculator from './components/ScrollPercentageCalc';
@@ -17,8 +17,7 @@ function App() {
 					backgroundAttachment: 'fixed',
 					backgroundPosition: 'center',
 				}}>
-				<Box sx={{ backdropFilter: 'blur(8px) brightness(.8)' }}>
-
+				<Box sx={{ backdropFilter: 'blur(8px) brightness(.9)' }}>
 					<Heading />
 					<Profile />
 					<Skills />

@@ -15,7 +15,7 @@ function Heading() {
 				width: '100vw',
 				maxWidth: '100%',
 			}}>
-				<NavBar />
+			<NavBar />
 			<Box
 				sx={{
 					flex: '1',
@@ -29,7 +29,7 @@ function Heading() {
 					Nice to meet you! I&apos;m{' '}
 					<span
 						style={{
-							textDecoration: `underline 10px ${theme.palette.pink.main} `,
+							textDecoration: `underline 10px ${theme.palette.yellow.main} `,
 						}}>
 						Shawky Sobhy
 					</span>
