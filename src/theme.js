@@ -6,6 +6,7 @@ const theme = createTheme({
 		primary: {
 			main: '#ffffff',
 		},
+		
 		yellow: {
 			main: '#00b6d3',
 		},

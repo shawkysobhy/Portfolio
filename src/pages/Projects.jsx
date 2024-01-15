@@ -1,12 +1,10 @@
 import { Box, Button } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
 import HeroText from '../components/Typography/HeroText';
 import { projectKeywords } from '../Mock/skillsList';
 
 import ProjectsCard from '../components/ProjectsCard';
 function Projects() {
 	const filterKeyword = Object.values(projectKeywords);
-	const theme = useTheme();
 	return (
 		<Box
 			sx={{
@@ -21,12 +19,9 @@ function Projects() {
 				sx={{
 					display: 'flex',
 					flexDirection: 'column',
-					alignItems: 'flex-start',
-					[theme.breakpoints.down('md')]: {
-						alignItems: 'center',
-					},
+          alignItems: 'center',
 				}}>
-				<HeroText customsx={{ fontSize: '65px' }}>Projects</HeroText>
+				<HeroText customsx={{ fontSize: '65px',textAlign:'center' }}>Projects</HeroText>
 				<Box
 					sx={{
 						display: 'flex',

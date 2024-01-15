@@ -2,6 +2,7 @@ import Heading from './pages/Heading';
 import Profile from './pages/Profile';
 import Skills from './pages/Skills';
 import HeadingBackground from './assets/profile.jpg';
+import Footer from './pages/Footer';
 import Projects from './pages/Projects';
 import { Box } from '@mui/material';
 import ScrollPercentageCalculator from './components/ScrollPercentageCalc';
@@ -22,6 +23,7 @@ function App() {
 					<Profile />
 					<Skills />
 					<Projects />
+					<Footer/>
 				</Box>
 			</Box>
 					</ScrollPercentageCalculator>
