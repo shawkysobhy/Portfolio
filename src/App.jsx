@@ -1,7 +1,7 @@
 import Heading from './pages/Heading';
 import Profile from './pages/Profile';
 import Skills from './pages/Skills';
-import HeadingBackground from './assets/sh100.jpg';
+import HeadingBackground from './assets/profile.jpg';
 import Projects from './pages/Projects';
 import { Box } from '@mui/material';
 import ScrollPercentageCalculator from './components/ScrollPercentageCalc';

@@ -25,7 +25,7 @@ function Heading() {
 					maxWidth: '1200px',
 					marginInline: 'auto',
 				}}>
-				<HeroText>
+				<HeroText customsx={{ paddingInline: '1rem' }}>
 					Nice to meet you! I&apos;m{' '}
 					<span
 						style={{

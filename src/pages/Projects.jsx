@@ -1,7 +1,9 @@
-import { Box } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import HeroText from '../components/Typography/HeroText';
 import { projectKeywords } from '../Mock/skillsList';
+
+import ProjectsCard from '../components/ProjectsCard';
 function Projects() {
 	const filterKeyword = Object.values(projectKeywords);
 	const theme = useTheme();
@@ -9,29 +11,28 @@ function Projects() {
 		<Box
 			sx={{
 				minHeight: '100vh',
-				paddingTop: '2rem',
+				paddingTop: '1rem',
+				maxWidth: '1500px',
+				width: '100%',
 				marginInline: 'auto',
-				maxWidth: '1200px',
+				paddingInline: '1rem',
 			}}>
 			<Box
 				sx={{
 					display: 'flex',
 					flexDirection: 'column',
 					alignItems: 'flex-start',
-					paddingInline: '15px',
-
 					[theme.breakpoints.down('md')]: {
 						alignItems: 'center',
 					},
 				}}>
-				<HeroText>Projects</HeroText>
+				<HeroText customsx={{ fontSize: '65px' }}>Projects</HeroText>
 				<Box
 					sx={{
 						display: 'flex',
-						alignItems: 'center',
 						gap: '1rem',
 						flexWrap: 'wrap',
-						margin: '1rem auto',
+						marginTop: '1rem',
 					}}>
 					<Box
 						sx={{
@@ -64,7 +65,7 @@ function Projects() {
 								fontWeight: '500',
 								':hover': {
 									backgroundColor: 'white',
-                  color:'black',
+									color: 'black',
 								},
 							}}
 							key={keyword}>
@@ -72,6 +73,105 @@ function Projects() {
 						</Box>
 					))}
 				</Box>
+				<Box
+					sx={{
+						marginTop: '2rem',
+						width: '100%',
+						display: 'flex',
+						flexWrap: 'wrap',
+						justifyContent: 'center',
+					}}>
+					<ProjectsCard
+						projectTitle={'hello world'}
+						projectDesc={
+							'This app will test your skills (as well as your knowledge!) as you build out a fully functional quiz. We provide a local JSON file to help you practice working with JSON! This app will test your skills'
+						}
+						tools={[projectKeywords.htmlCss, projectKeywords.react]}
+						links={[
+							{
+								title: 'Github',
+								url: 'https://github.com/shawkysobhy?tab=repositories',
+							},
+							{
+								title: 'Demo',
+								url: 'https://github.com/shawkysobhy',
+							},
+						]}
+					/>
+					<ProjectsCard
+						projectTitle={'hello world'}
+						projectDesc={
+							'This app will test your skills (as well as your knowledge!) as you build out a fully functional quiz. We provide a local JSON file to help you practice working with JSON! This app will test your skills'
+						}
+						tools={[projectKeywords.htmlCss, projectKeywords.react]}
+					/>
+					<ProjectsCard
+						projectTitle={'hello world'}
+						projectDesc={
+							'This app will test your skills (as well as your knowledge!) as you build out a fully functional quiz. We provide a local JSON file to help you practice working with JSON! This app will test your skills'
+						}
+						tools={[projectKeywords.htmlCss, projectKeywords.react]}
+					/>
+					<ProjectsCard
+						projectTitle={'hello world'}
+						projectDesc={
+							'This app will test your skills (as well as your knowledge!) as you build out a fully functional quiz.'
+						}
+						tools={[projectKeywords.htmlCss, projectKeywords.react]}
+					/>
+					<ProjectsCard
+						projectTitle={'hello world'}
+						projectDesc={
+							'This app will test your skills (as well as your knowledge!) as you build out a fully functional quiz. We provide a local JSON file to help you practice working with JSON! This app will test your skills'
+						}
+						tools={[projectKeywords.htmlCss, projectKeywords.react]}
+					/>
+					<ProjectsCard
+						projectTitle={'hello world'}
+						projectDesc={
+							'This app will test your skills (as well as your knowledge!) as you build out a fully functional quiz. We provide a local JSON file to help you practice working with JSON! This app will test your skills'
+						}
+						tools={[projectKeywords.htmlCss, projectKeywords.react]}
+					/>
+					<ProjectsCard
+						projectLink={
+							'https://testbook.com/web-development/how-to-make-an-image-clickable-in-html'
+						}
+						projectTitle={'hello world'}
+						projectDesc={
+							'This app will test your skills (as well as your knowledge!) as you build out a fully functional quiz. We provide a local JSON file to help you practice working with JSON! This app will test your skills'
+						}
+						tools={[projectKeywords.htmlCss, projectKeywords.react]}
+					/>
+					<ProjectsCard
+						projectTitle={'hello world'}
+						projectDesc={
+							'This app will test your skills (as well as your knowledge!) as you build out a fully functional quiz.'
+						}
+						tools={[projectKeywords.htmlCss, projectKeywords.react]}
+					/>
+				</Box>
+				<Button
+					sx={{
+						border: '2px solid white',
+						padding: '8px 32px',
+						color: 'black',
+						borderRadius: '5px',
+						fontSize: '18px',
+						whiteSpace: 'nowrap',
+						textOverflow: 'ellipsis',
+						cursor: 'pointer',
+						fontWeight: '700',
+						backgroundColor: 'white',
+						userSelect: 'none',
+						margin: '1rem auto',
+						':hover': {
+							backgroundColor: 'black',
+							color: 'white',
+						},
+					}}>
+					Show More ...
+				</Button>
 			</Box>
 		</Box>
 	);

@@ -22,40 +22,30 @@ function Skills() {
 				display: 'flex',
 				flexDirection: 'column',
 				marginInline: 'auto',
+				minHeight:'100vh',
 				maxWidth: '1200px',
+				backdropFilter: 'blur(3px) brightness(.8) ',
+				gap: '3rem',
+				alignItems: mdScreen ? 'center' : 'flex-start',
 			}}>
-			<Box
-				sx={{
-					flex: '1',
-					backdropFilter: 'blur(3px) brightness(.8) ',
-				}}>
-				<Box
-					sx={{
-						marginInline: 'auto',
-						display: 'flex',
-						flexDirection: 'column',
-						gap: '3rem',
-						alignItems: mdScreen ? 'center' : 'flex-start',
-					}}>
-					<HeroText customsx={{ paddingInline: '1rem' }}>
-						Skils & Technologies
-					</HeroText>
-					<SkillsList skills={skillsList} />
-					<Box sx={{ padding: '3rem 1rem', width: '100%' }}>
-						<InfiniteLooper speed={13} direction='right'>
-							<SkillIconContainer icon={Js} />
-							<SkillIconContainer icon={Ts} />
-							<SkillIconContainer icon={Redux} />
-							<SkillIconContainer icon={Mui} />
-							<SkillIconContainer icon={Css} />
-							<SkillIconContainer icon={Html} />
-							<SkillIconContainer icon={Github} />
-							<SkillIconContainer icon={Tailwind} />
-						</InfiniteLooper>
-					</Box>
+
+				<HeroText customsx={{ paddingInline: '1rem' }}>
+					Skils & Technologies
+				</HeroText>
+				<SkillsList skills={skillsList} />
+				<Box sx={{ padding: '3rem 1rem', width: '100%' }}>
+					<InfiniteLooper speed={13} direction='right'>
+						<SkillIconContainer icon={Js} />
+						<SkillIconContainer icon={Ts} />
+						<SkillIconContainer icon={Redux} />
+						<SkillIconContainer icon={Mui} />
+						<SkillIconContainer icon={Css} />
+						<SkillIconContainer icon={Html} />
+						<SkillIconContainer icon={Github} />
+						<SkillIconContainer icon={Tailwind} />
+					</InfiniteLooper>
 				</Box>
 			</Box>
-		</Box>
 	);
 }
 
