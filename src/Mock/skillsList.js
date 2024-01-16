@@ -11,9 +11,10 @@ export const skillsList = [
 	'Css',
 ];
 export const projectKeywords = {
-	react:'React Js',
-	redux:'Redux',
-	mui:'Material UI',
-	tailwind:'Tailwind',
-	htmlCss:'Html/Css',
+	react: 'React Js',
+	redux: 'Redux',
+	mui: 'Material UI',
+	typescript: 'typescript',
+	tailwind: 'Tailwind',
+	htmlCss: 'Html/Css',
 };
