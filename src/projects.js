@@ -142,4 +142,42 @@ export const PROJECTS = [
 		projectImage:
 			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/Screenshot%20120545.png',
 	},
+	{
+		projectTitle: 'Movie App',
+		projectDesc:
+			'A React-based movie app enhances the user experience by integrating with a movie database API to seamlessly search and retrieve movie information. Utilizing React state management, the app allows users to rate and review movies, storing their preferences locally using browser storage. The dynamic interface ensures a smooth browsing experience',
+		tools: [projectKeywords.react, projectKeywords.htmlCss],
+		projectLink: 'https://github.com/shawkysobhy/Movies-App',
+		links: [
+			{
+				title: 'Repo',
+				url: 'https://github.com/shawkysobhy/Movies-App',
+			},
+			{
+				title: 'Live',
+				url: 'https://movies-app-woad-ten.vercel.app/',
+			},
+		],
+		projectImage:
+			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/movies.png',
+	},
+	{
+		projectTitle: 'PodMan',
+		projectDesc:
+			'freelance task , client need it as intro page for documentation & customize docs ',
+		tools: [projectKeywords.react, projectKeywords.mui],
+		projectLink: 'https://github.com/shawkysobhy/landingpage',
+		links: [
+			{
+				title: 'Repo',
+				url: 'https://github.com/shawkysobhy/landingpage',
+			},
+			{
+				title: 'Live',
+				url: 'https://landingpage-alpha-two.vercel.app/',
+			},
+		],
+		projectImage:
+			'https://raw.githubusercontent.com/shawkysobhy/landingpage/master/src/assets/news.png',
+	},
 ];
