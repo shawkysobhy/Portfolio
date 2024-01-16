@@ -33,6 +33,7 @@ function Projects() {
 					}}>
 					<Box
 						sx={{
+							cursor: 'not-allowed',
 							border: '2px solid white',
 							padding: '8px 16px',
 							color: 'black',
@@ -40,7 +41,6 @@ function Projects() {
 							fontSize: '18px',
 							whiteSpace: 'nowrap',
 							textOverflow: 'ellipsis',
-							cursor: 'pointer',
 							fontWeight: '700',
 							backgroundColor: 'white',
 							userSelect: 'none',
@@ -50,6 +50,7 @@ function Projects() {
 					{filterKeyword.map((keyword) => (
 						<Box
 							sx={{
+								cursor: 'not-allowed',
 								border: '2px solid white',
 								padding: '8px 16px',
 								color: 'white',
@@ -58,7 +59,6 @@ function Projects() {
 								fontSize: '18px',
 								whiteSpace: 'nowrap',
 								textOverflow: 'ellipsis',
-								cursor: 'pointer',
 								fontWeight: '500',
 								':hover': {
 									backgroundColor: 'white',

@@ -75,7 +75,7 @@ function NavBar() {
 				</NavBarItem>
 				<NavBarItem>
 					<StyledLink
-					sx={{fontWeight:'500'}}
+					sx={{fontWeight:'500',fontSize:'20px'}}
 						href='https://drive.google.com/drive/folders/1a2Atq24jMS1u7J9lkwBvZye90U9wpdL0'
 						target='_blank'>
 						Ruesme

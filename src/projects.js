@@ -1,67 +1,6 @@
 import { projectKeywords } from './Mock/skillsList';
 export const PROJECTS = [
 	{
-		projectTitle: 'Clipboard landing page',
-		projectDesc:
-			'Clipboard Landing page for download Mac & Ios allows you to track and organize everything you copy.',
-		tools: [projectKeywords.htmlCss],
-		projectLink: 'https://github.com/shawkysobhy/Clipboard-landing-page',
-		links: [
-			{
-				title: 'Repo',
-				url: 'https://github.com/shawkysobhy/Clipboard-landing-page',
-			},
-			{
-				title: 'Live',
-				url: 'https://shawkysobhy.github.io/Clipboard-landing-page/',
-			},
-		],
-		projectImage:
-			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/nem2gkhh4jptjzjb0y2y.jpeg?token=GHSAT0AAAAAACKLQJR6ATCY2SLUXKMYL2ZQZNGMJ4A',
-	},
-	{
-		projectTitle: 'Rest countries explorer with react',
-		projectDesc:
-			'This is my solution to the REST Countries API with a color theme switcher challenge on Frontend Mentor. You can view the list of all countries and find a specific one via search or by filtering regions. By navigating to the individual country page, you are able to see more details about the country like native name or border countries.',
-		tools: [projectKeywords.react, projectKeywords.htmlCss],
-		projectLink: 'https://github.com/shawkysobhy/rest-countries-explorer',
-		links: [
-			{
-				title: 'Repo',
-				url: 'https://github.com/shawkysobhy/rest-countries-explorer',
-			},
-			{
-				title: 'Live',
-				url: 'https://shawkysobhy.github.io/rest-countries-explorer/',
-			},
-		],
-		projectImage:
-			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/tsykcthuxajsgl5zym9y.jpg?token=GHSAT0AAAAAACKLQJR66Z2K5XLV4NZ2GTHGZNGMMLQ',
-	},
-	{
-		projectTitle: 'Pizza Pulse',
-		projectDesc:
-			'Welcome to PizzaPulse, your go-to web app for ordering delicious pizzas with ease! With PizzaPulse, you can seamlessly select your favorite pizza, provide delivery details, track your order in real-time, and enjoy the convenience of a user-friendly interface. Read on to explore the features, technologies used, and how to get started',
-		tools: [
-			projectKeywords.react,
-			projectKeywords.tailwind,
-			projectKeywords.redux,
-		],
-		projectLink: 'https://github.com/shawkysobhy/PizzaPulse',
-		links: [
-			{
-				title: 'Repo',
-				url: 'https://github.com/shawkysobhy/PizzaPulse',
-			},
-			{
-				title: 'Live',
-				url: 'https://pizza-pulse.vercel.app/',
-			},
-		],
-		projectImage:
-			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/pizza-image.png',
-	},
-	{
 		projectTitle: 'Learning Management System',
 		projectDesc:
 			"For our graduation project, I successfully developed a Learning Management System using React.js, MUI, and TypeScript. Together, we created reusable components that enhanced the system's functionality and usability with team memeber",
@@ -109,19 +48,46 @@ export const PROJECTS = [
 			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/Screenshot%20120650.png',
 	},
 	{
-		projectTitle: 'Omni Food',
+		projectTitle: 'Pizza Pulse',
 		projectDesc:
-			'fully responsive restaurant landing page ensures a seamless and engaging user experience across various devices, from desktops to tablets and smartphones',
-		tools: [projectKeywords.htmlCss, 'Responsive Design'],
-		projectLink: 'https://restaurant-landing-page-ecru.vercel.app/',
+			'Welcome to PizzaPulse, your go-to web app for ordering delicious pizzas with ease! With PizzaPulse, you can seamlessly select your favorite pizza, provide delivery details, track your order in real-time, and enjoy the convenience of a user-friendly interface. Read on to explore the features, technologies used, and how to get started',
+		tools: [
+			projectKeywords.react,
+			projectKeywords.tailwind,
+			projectKeywords.redux,
+		],
+		projectLink: 'https://github.com/shawkysobhy/PizzaPulse',
 		links: [
 			{
+				title: 'Repo',
+				url: 'https://github.com/shawkysobhy/PizzaPulse',
+			},
+			{
 				title: 'Live',
-				url: 'https://wild-hut-tracker.vercel.app/dashboard/',
+				url: 'https://pizza-pulse.vercel.app/',
 			},
 		],
 		projectImage:
-			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/Screenshot%202434.png',
+			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/pizza-image.png',
+	},
+	{
+		projectTitle: 'Rest countries explorer with react',
+		projectDesc:
+			'This is my solution to the REST Countries API with a color theme switcher challenge on Frontend Mentor. You can view the list of all countries and find a specific one via search or by filtering regions. By navigating to the individual country page, you are able to see more details about the country like native name or border countries.',
+		tools: [projectKeywords.react, projectKeywords.htmlCss],
+		projectLink: 'https://github.com/shawkysobhy/rest-countries-explorer',
+		links: [
+			{
+				title: 'Repo',
+				url: 'https://github.com/shawkysobhy/rest-countries-explorer',
+			},
+			{
+				title: 'Live',
+				url: 'https://shawkysobhy.github.io/rest-countries-explorer/',
+			},
+		],
+		projectImage:
+			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/tsykcthuxajsgl5zym9y.jpg?token=GHSAT0AAAAAACKLQJR66Z2K5XLV4NZ2GTHGZNGMMLQ',
 	},
 	{
 		projectTitle: 'React Quiz',
@@ -143,6 +109,25 @@ export const PROJECTS = [
 			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/Screenshot%20120545.png',
 	},
 	{
+		projectTitle: 'Clipboard landing page',
+		projectDesc:
+			'Clipboard Landing page for download Mac & Ios allows you to track and organize everything you copy.',
+		tools: [projectKeywords.htmlCss],
+		projectLink: 'https://github.com/shawkysobhy/Clipboard-landing-page',
+		links: [
+			{
+				title: 'Repo',
+				url: 'https://github.com/shawkysobhy/Clipboard-landing-page',
+			},
+			{
+				title: 'Live',
+				url: 'https://shawkysobhy.github.io/Clipboard-landing-page/',
+			},
+		],
+		projectImage:
+			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/nem2gkhh4jptjzjb0y2y.jpeg?token=GHSAT0AAAAAACKLQJR6ATCY2SLUXKMYL2ZQZNGMJ4A',
+	},
+	{
 		projectTitle: 'Calculator',
 		projectDesc: 'Calculator with react  ',
 		tools: [projectKeywords.react, 'Css'],
@@ -159,6 +144,35 @@ export const PROJECTS = [
 		],
 		projectImage:
 			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/clac.png',
+	},
+	{
+		projectTitle: 'Omni Food',
+		projectDesc:
+			'fully responsive restaurant landing page ensures a seamless and engaging user experience across various devices, from desktops to tablets and smartphones',
+		tools: [projectKeywords.htmlCss, 'Responsive Design'],
+		projectLink: 'https://restaurant-landing-page-ecru.vercel.app/',
+		links: [
+			{
+				title: 'Live',
+				url: 'https://wild-hut-tracker.vercel.app/dashboard/',
+			},
+		],
+		projectImage:
+			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/Screenshot%202434.png',
+	},
+	{
+		projectTitle: 'Frontend Profile',
+		projectDesc:
+			'my profile on frontend mentor which apply layouts and design  ',
+		projectLink: 'https://www.frontendmentor.io/profile/shawky55',
+		links: [
+			{
+				title: 'Link',
+				url: 'https://www.frontendmentor.io/profile/shawky55',
+			},
+		],
+		projectImage:
+			'https://miro.medium.com/v2/resize:fit:1400/0*cfYEyKU7fH1Vz37c.png',
 	},
 	{
 		projectTitle: 'Movie App',
@@ -199,17 +213,40 @@ export const PROJECTS = [
 			'https://raw.githubusercontent.com/shawkysobhy/landingpage/master/src/assets/news.png',
 	},
 	{
-		projectTitle: 'Frontend Profile',
+		projectTitle: 'Todo app',
 		projectDesc:
-			'my profile on frontend mentor which apply layouts and design  ',
-		projectLink: 'https://www.frontendmentor.io/profile/shawky55',
+			'classic todo app with a few twists! Using Html Css responsive with all screens',
+		tools: ['java script', projectKeywords.htmlCss],
+		projectLink: 'https://github.com/shawkysobhy/Todo-App',
 		links: [
 			{
-				title: 'Link',
-				url: 'https://www.frontendmentor.io/profile/shawky55',
+				title: 'Repo',
+				url: 'https://github.com/shawkysobhy/Todo-App',
+			},
+			{
+				title: 'Live',
+				url: 'https://shawkysobhy.github.io/Todo-App/',
 			},
 		],
 		projectImage:
-			'https://miro.medium.com/v2/resize:fit:1400/0*cfYEyKU7fH1Vz37c.png',
+			'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/llcq9eiv3ney5tkxgdtu.jpg',
+	},
+	{
+		projectTitle: 'Portflio',
+		projectDesc:
+			'Developed a responsive personal portfolio using HTML, CSS, and React.js, showcasing skills and projects. Features clean layout, project galleries, and intuitive navigation for an interactive user experience. Serves as a centralized hub for employers to explore my web development proficiency and achievements.',
+		tools: [projectKeywords.react, projectKeywords.mui],
+		projectLink: 'https://github.com/shawkysobhy/Portfolio',
+		links: [
+			{
+				title: 'Repo',
+				url: 'https://github.com/shawkysobhy/Portfolio',
+			},
+			{
+				title: 'Live',
+				url: 'portfolio-shawkysobhy.vercel.app',
+			},
+		],
+		projectImage: '',
 	},
 ];
