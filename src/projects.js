@@ -1,5 +1,4 @@
 import { projectKeywords } from './Mock/skillsList';
-
 export const PROJECTS = [
 	{
 		projectTitle: 'Clipboard landing page',
@@ -43,7 +42,11 @@ export const PROJECTS = [
 		projectTitle: 'Pizza Pulse',
 		projectDesc:
 			'Welcome to PizzaPulse, your go-to web app for ordering delicious pizzas with ease! With PizzaPulse, you can seamlessly select your favorite pizza, provide delivery details, track your order in real-time, and enjoy the convenience of a user-friendly interface. Read on to explore the features, technologies used, and how to get started',
-		tools: [projectKeywords.react, projectKeywords.htmlCss],
+		tools: [
+			projectKeywords.react,
+			projectKeywords.tailwind,
+			projectKeywords.redux,
+		],
 		projectLink: 'https://github.com/shawkysobhy/PizzaPulse',
 		links: [
 			{
@@ -56,7 +59,7 @@ export const PROJECTS = [
 			},
 		],
 		projectImage:
-			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/pizza-image.png?token=GHSAT0AAAAAACKLQJR7B2UGZRWUQPCJJURKZNGMNGQ',
+			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/pizza-image.png',
 	},
 	{
 		projectTitle: 'Learning Management System',
@@ -79,6 +82,64 @@ export const PROJECTS = [
 			},
 		],
 		projectImage:
-			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/pizza-image.png?token=GHSAT0AAAAAACKLQJR7B2UGZRWUQPCJJURKZNGMNGQ',
+			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/Screenshot%203253463png.png',
+	},
+	{
+		projectTitle: 'WildHut Tracker',
+		projectDesc:
+			'WildHut Tracker is a robust application designed to streamline the process of checking in and checking out guests visiting cabins. The app not only tracks guest information but also performs calculations and generates statistics graphs for better insights. Authentication ensures that only authorized users can access and manage the data.',
+		tools: [
+			projectKeywords.react,
+			projectKeywords.mui,
+			projectKeywords.typescript,
+			'reactQuery',
+		],
+		projectLink: 'https://github.com/shawkysobhy/WildHut-Tracker',
+		links: [
+			{
+				title: 'Repo',
+				url: 'https://github.com/shawkysobhy/WildHut-Tracker',
+			},
+			{
+				title: 'Live',
+				url: 'https://wild-hut-tracker.vercel.app/dashboard/',
+			},
+		],
+		projectImage:
+			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/Screenshot%20120650.png',
+	},
+	{
+		projectTitle: 'Omni Food',
+		projectDesc:
+			'fully responsive restaurant landing page ensures a seamless and engaging user experience across various devices, from desktops to tablets and smartphones',
+		tools: [projectKeywords.htmlCss, 'Responsive Design'],
+		projectLink: 'https://restaurant-landing-page-ecru.vercel.app/',
+		links: [
+			{
+				title: 'Live',
+				url: 'https://wild-hut-tracker.vercel.app/dashboard/',
+			},
+		],
+		projectImage:
+			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/Screenshot%202434.png',
+	},
+	{
+		projectTitle: 'React Quiz',
+		projectDesc:
+			'A React-based quiz application provides an interactive and engaging platform for users to test their knowledge on various topics. Leveraging the power of React, this app offers a seamless and dynamic user interface,ensuring a responsive and intuitive experience across devices',
+		tools: [projectKeywords.typescript, projectKeywords.react],
+		projectLink: 'https://github.com/shawkysobhy/Quiz-React-App',
+		links: [
+			{
+				title: 'Repo',
+				url: 'https://github.com/shawkysobhy/Quiz-React-App',
+			},
+			{
+				title: 'Live',
+				url: 'https://quiz-react-app-azure.vercel.app/',
+			},
+		],
+		projectImage:
+			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/Screenshot%20120545.png',
 	},
 ];
