@@ -116,24 +116,4 @@ function Projects() {
 	);
 }
 
-/**					<ProjectsCard
-						projectImage={
-							'https://www.frontendmentor.io/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdz209s6jk%2Fimage%2Fupload%2Fv1556724941%2FChallenges%2Fnem2gkhh4jptjzjb0y2y.jpg&w=384&q=75'
-						}
-						projectTitle={'hello world'}
-						projectDesc={
-							'This app will test your skills (as well as your knowledge!) as you build out a fully functional quiz. We provide a local JSON file to help you practice working with JSON! This app will test your skills'
-						}
-						tools={[projectKeywords.htmlCss, projectKeywords.react]}
-						links={[
-							{
-								title: 'Github',
-								url: 'https://github.com/shawkysobhy?tab=repositories',
-							},
-							{
-								title: 'Demo',
-								url: 'https://github.com/shawkysobhy',
-							},
-						]}
-					/> */
 export default Projects;

@@ -45,6 +45,13 @@ function Footer() {
 							color: '#fff',
 							fontSize: { xs: '20px', sm: '25px' },
 						}}>
+						<Link
+							href='https://drive.google.com/drive/folders/1a2Atq24jMS1u7J9lkwBvZye90U9wpdL0'
+							target='_blank'>
+							<Typography sx={{ fontSize: 'inherit', letterSpacing: '3px' }}>
+								Ruesme
+							</Typography>
+						</Link>
 						<Link href='mailto:shawkysobhy98@gmail.com' target='_blank'>
 							<Typography sx={{ fontSize: 'inherit' }}>
 								shawkysobhy98@gmail.com
@@ -55,11 +62,6 @@ function Footer() {
 								Whatsapp : 01503014979
 							</Typography>
 						</Link>
-						<Link href='https://wa.me/201503014979' target='_blank'>
-							<Typography sx={{ fontSize: 'inherit', letterSpacing: '3px' }}>
-								Phone : 201503014979
-							</Typography>
-						</Link>
 						<Link
 							href='https://www.linkedin.com/in/shawky-sobhy/'
 							target='_blank'>
@@ -67,6 +69,17 @@ function Footer() {
 								Linkedin
 							</Typography>
 						</Link>
+						<Link href='https://wa.me/201503014979' target='_blank'>
+							<Typography sx={{ fontSize: 'inherit', letterSpacing: '3px' }}>
+								Phone : 201503014979
+							</Typography>
+						</Link>
+						<Link href='https://wa.me/201503014979' target='_blank'>
+							<Typography sx={{ fontSize: 'inherit', letterSpacing: '3px' }}>
+								Phone : 01156243776
+							</Typography>
+						</Link>
+
 						<Link href='https://github.com/shawkysobhy/'>
 							<Typography sx={{ fontSize: '25px', color: '#fff' }}>
 								Github

@@ -143,6 +143,24 @@ export const PROJECTS = [
 			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/Screenshot%20120545.png',
 	},
 	{
+		projectTitle: 'Calculator',
+		projectDesc: 'Calculator with react  ',
+		tools: [projectKeywords.react, 'Css'],
+		projectLink: 'https://github.com/shawkysobhy/calculator-app',
+		links: [
+			{
+				title: 'Repo',
+				url: 'https://github.com/shawkysobhy/calculator-app',
+			},
+			{
+				title: 'Live',
+				url: 'https://shawkysobhy.github.io/calculator-app/',
+			},
+		],
+		projectImage:
+			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/clac.png',
+	},
+	{
 		projectTitle: 'Movie App',
 		projectDesc:
 			'A React-based movie app enhances the user experience by integrating with a movie database API to seamlessly search and retrieve movie information. Utilizing React state management, the app allows users to rate and review movies, storing their preferences locally using browser storage. The dynamic interface ensures a smooth browsing experience',
@@ -179,5 +197,19 @@ export const PROJECTS = [
 		],
 		projectImage:
 			'https://raw.githubusercontent.com/shawkysobhy/landingpage/master/src/assets/news.png',
+	},
+	{
+		projectTitle: 'Frontend Profile',
+		projectDesc:
+			'my profile on frontend mentor which apply layouts and design  ',
+		projectLink: 'https://www.frontendmentor.io/profile/shawky55',
+		links: [
+			{
+				title: 'Link',
+				url: 'https://www.frontendmentor.io/profile/shawky55',
+			},
+		],
+		projectImage:
+			'https://miro.medium.com/v2/resize:fit:1400/0*cfYEyKU7fH1Vz37c.png',
 	},
 ];

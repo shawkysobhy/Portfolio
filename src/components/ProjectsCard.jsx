@@ -57,7 +57,7 @@ function ProjectsCard({
 						width: '100%',
 						gap: '1rem',
 					}}>
-					{tools.map((tool) => (
+					{tools?.map((tool) => (
 						<Box component='li' key={tool} sx={{ fontWeight: '500' }}>
 							{tool}
 						</Box>

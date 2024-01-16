@@ -14,6 +14,9 @@ const IconStyle = {
 };
 const StyledLink = styled(Link)`
 	text-decoration: none;
+	display: 'flex';
+	gap:'5px';
+	align-items:'center';
 	color: inherit; 
 	&:hover {
 		color: #e36588;
@@ -26,7 +29,8 @@ function NavBar() {
 		<Box
 			sx={{
 				padding: '20px 15px',
-				maxWidth: '1200px',
+				// maxWidth: '1200px',
+				width: '80%',
 				marginInline: 'auto',
 				display: 'flex',
 				justifyContent: 'space-between',
@@ -38,7 +42,12 @@ function NavBar() {
 				},
 			}}>
 			<Typography
-				sx={{ fontSize: '32px', textAlign: 'center', fontWeight: '700',color:'white' }}>
+				sx={{
+					fontSize: '32px',
+					textAlign: 'center',
+					fontWeight: '700',
+					color: 'white',
+				}}>
 				ShawkySobhy
 			</Typography>
 			<List sx={{ display: 'flex' }}>
@@ -62,6 +71,14 @@ function NavBar() {
 				<NavBarItem>
 					<StyledLink href='https://github.com/shawkysobhy' target='_blank'>
 						<GitHubIcon sx={IconStyle} />
+					</StyledLink>
+				</NavBarItem>
+				<NavBarItem>
+					<StyledLink
+					sx={{fontWeight:'500'}}
+						href='https://drive.google.com/drive/folders/1a2Atq24jMS1u7J9lkwBvZye90U9wpdL0'
+						target='_blank'>
+						Ruesme
 					</StyledLink>
 				</NavBarItem>
 			</List>
