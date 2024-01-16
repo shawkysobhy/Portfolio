@@ -6,6 +6,7 @@ function ProjectsCard({
 	tools,
 	projectLink,
 	links,
+	projectImage,
 }) {
 	return (
 		<Box
@@ -27,16 +28,24 @@ function ProjectsCard({
 						margin: '0',
 						maxWidth: '100%',
 						maxHeight: '215px',
-						cursor:'pointer',
+						cursor: 'pointer',
+						width: '100%',
 					}}
 					alt={`project cover of ${projectTitle}.`}
-					src={`${HeadingBackground}`}
+					src={projectImage ? projectImage : HeadingBackground}
 				/>
 			</Link>
 			<Box sx={{ padding: '2rem' }}>
 				<Link
 					href={projectLink}
-					sx={{ fontSize: '2rem', fontWeight: '500', lineHeight: 'normal' ,textDecoration:'none',cursor:'pointer'}}>
+					target='_blank'
+					sx={{
+						fontSize: '2rem',
+						fontWeight: '500',
+						lineHeight: 'normal',
+						textDecoration: 'none',
+						cursor: 'pointer',
+					}}>
 					{projectTitle}
 				</Link>
 				<Box

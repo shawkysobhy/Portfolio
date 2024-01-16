@@ -16,7 +16,8 @@ const ScrollPercentageCalculator = ({ children }) => {
 		display: 'flex',
 		alignItems: 'center',
 		zIndex: '100',
-		backgroundColor: 'whitesmoke',
+		background:
+			'linear-gradient(137deg,#f0f0f0 0%,rgba(0,182,211) 100%)',
 	});
 
 	useEffect(() => {

@@ -22,7 +22,7 @@ function Skills() {
 				display: 'flex',
 				flexDirection: 'column',
 				marginInline: 'auto',
-				paddingBlock: '8rem',
+				minHeight:{xs:'70vh',md:'100vh'},
 				maxWidth: '1200px',
 				backdropFilter: 'blur(3px) brightness(.8) ',
 				gap: '3rem',
