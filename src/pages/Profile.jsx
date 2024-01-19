@@ -1,37 +1,27 @@
 import { Box, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import HeroText from '../components/Typography/HeroText';
-
 function Profile() {
 	const theme = useTheme();
 	return (
 		<Box
 			sx={{
+				display: 'flex',
+				padding: '2rem 30px',
 				minHeight: '100vh',
-				paddingBlock: '2rem',
 				marginInline: 'auto',
 				maxWidth: '1200px',
-				display: 'flex',
 				flexDirection: 'column',
-				alignItems: 'flex-start',
-				[theme.breakpoints.down('md')]: {
-					alignItems: 'center',
-				},
+				alignItems:{sm:'center',xmd:'start'}
 			}}>
-			<HeroText customsx={{ paddingInline: '1rem' }}>
-				Profile :
-			</HeroText>
+			<HeroText>Profile :</HeroText>
 			<Typography
 				sx={{
 					'::selection': {
 						color: theme.palette.gray.main,
 						backgroundColor: theme.palette.selection.main,
 					},
-					paddingInline: '15px',
-					width: '85%',
-					[theme.breakpoints.down('sm')]: {
-						width: '95%',
-					},
+					width: { xs: '95%', xmd: '85%' },
 					lineHeight: '2',
 					fontSize: '20px',
 					fontWeight: '500',
@@ -69,7 +59,6 @@ function Profile() {
 						color: theme.palette.gray.main,
 						backgroundColor: theme.palette.selection.main,
 					},
-					paddingInline: '15px',
 					width: '85%',
 					marginTop: '2rem',
 					[theme.breakpoints.down('sm')]: {

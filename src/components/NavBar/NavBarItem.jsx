@@ -1,18 +1,26 @@
-import { ListItem } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import { ListItem ,Link} from '@mui/material';
+import styled from '@emotion/styled';
+const StyledLink = styled(Link)`
+	text-decoration: none;
+	display: 'flex';
+	gap: '5px';
+	align-items: 'center';
+	color: inherit;
+	&:hover {
+		color: #924d61;
+	}
+`;
 
-function NavBarItem({ children }) {
-	const theme = useTheme();
+function NavBarItem({ children ,contactData}) {
 	return (
 		<ListItem
 			sx={{
-				padding: '8px 16px',
 				color: 'white',
-				[theme.breakpoints.down('xmd')]: {
-					padding: '8px',
-				},
+				padding:{xs:'8px',sm:'8px 12px'},
 			}}>
-			{children}
+			<StyledLink href={contactData} target='_blank'>
+				{children}
+			</StyledLink>
 		</ListItem>
 	);
 }

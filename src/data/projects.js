@@ -1,4 +1,4 @@
-import { projectKeywords } from './Mock/skillsList';
+import { projectKeywords } from '../Mock/skillsList';
 export const PROJECTS = [
 	{
 		projectTitle: 'Learning Management System',

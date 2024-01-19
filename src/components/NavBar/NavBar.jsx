@@ -1,10 +1,9 @@
-import { useTheme } from '@mui/material/styles';
-import { Typography, Box, List, Link } from '@mui/material';
+import CONTACT from '../../data/contactData';
+import { Typography, Box, List } from '@mui/material';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
-import styled from '@emotion/styled';
 import NavBarItem from './NavBarItem';
 const IconStyle = {
 	width: '30px',
@@ -12,34 +11,19 @@ const IconStyle = {
 	display: 'block',
 	cursor: 'pointer',
 };
-const StyledLink = styled(Link)`
-	text-decoration: none;
-	display: 'flex';
-	gap:'5px';
-	align-items:'center';
-	color: inherit; 
-	&:hover {
-		color: #e36588;
-	}
-`;
 function NavBar() {
-	const theme = useTheme();
 
 	return (
 		<Box
 			sx={{
 				padding: '20px 15px',
-				// maxWidth: '1200px',
-				width: '80%',
 				marginInline: 'auto',
 				display: 'flex',
 				justifyContent: 'space-between',
 				alignItems: 'center',
-				[theme.breakpoints.down('sm')]: {
-					flexDirection: 'column',
-					flexWrap: 'wrap',
-					alignItems: 'center',
-				},
+				width: {xs:'100%',md:'90%'},
+				flexDirection:{xs:'column',sm:'row'},
+				flexWrap:{xs:'wrap',xmd:'nowrap'}
 			}}>
 			<Typography
 				sx={{
@@ -51,35 +35,25 @@ function NavBar() {
 				ShawkySobhy
 			</Typography>
 			<List sx={{ display: 'flex' }}>
-				<NavBarItem>
-					<StyledLink href={'mailto:shawkysobhy98@gmail.com'}>
-						<AlternateEmailIcon sx={IconStyle} />
-					</StyledLink>
+				<NavBarItem contactData={'mailto:shawkysobhy98@gmail.com'}>
+					<AlternateEmailIcon sx={IconStyle} />
 				</NavBarItem>
-				<NavBarItem>
-					<StyledLink href='tel:+021503014979' target='_blank'>
-						<PhoneInTalkIcon sx={IconStyle} />
-					</StyledLink>
+				<NavBarItem contactData={CONTACT.phone1}>
+					<PhoneInTalkIcon sx={IconStyle} />
 				</NavBarItem>
-				<NavBarItem>
-					<StyledLink
-						href='https://www.linkedin.com/in/shawky-sobhy/'
-						target='_blank'>
-						<LinkedInIcon sx={IconStyle} />
-					</StyledLink>
+				<NavBarItem contactData={CONTACT.linkedIn}>
+					<LinkedInIcon sx={IconStyle} />
 				</NavBarItem>
-				<NavBarItem>
-					<StyledLink href='https://github.com/shawkysobhy' target='_blank'>
-						<GitHubIcon sx={IconStyle} />
-					</StyledLink>
+				<NavBarItem contactData={CONTACT.github}>
+					<GitHubIcon sx={IconStyle} />
 				</NavBarItem>
-				<NavBarItem>
-					<StyledLink
-					sx={{fontWeight:'500',fontSize:'20px'}}
-						href='https://drive.google.com/drive/folders/1a2Atq24jMS1u7J9lkwBvZye90U9wpdL0'
-						target='_blank'>
+				<NavBarItem
+					contactData={
+						'https://drive.google.com/drive/folders/1a2Atq24jMS1u7J9lkwBvZye90U9wpdL0'
+					}>
+					<Typography sx={{ fontWeight: '500', fontSize: '20px' }}>
 						Ruesme
-					</StyledLink>
+					</Typography>
 				</NavBarItem>
 			</List>
 		</Box>

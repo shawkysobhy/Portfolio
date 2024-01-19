@@ -1,7 +1,7 @@
 import { Box, Button } from '@mui/material';
 import HeroText from '../components/Typography/HeroText';
 import { projectKeywords } from '../Mock/skillsList';
-import { PROJECTS } from '../projects';
+import { PROJECTS } from '../data/projects';
 import ProjectsCard from '../components/ProjectsCard';
 function Projects() {
 	const filterKeyword = Object.values(projectKeywords);

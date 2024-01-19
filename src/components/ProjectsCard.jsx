@@ -56,6 +56,7 @@ function ProjectsCard({
 						listStyle: 'none',
 						display: 'flex',
 						width: '100%',
+						flexWrap:'wrap',
 						gap: '1rem',
 					}}>
 					{tools?.map((tool) => (
