@@ -158,7 +158,7 @@ export const PROJECTS = [
 			},
 		],
 		projectImage:
-			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/Screenshot%202434.png',
+			'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/Screenshot%20s.png',
 	},
 	{
 		projectTitle: 'Frontend Profile',
