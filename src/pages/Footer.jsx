@@ -25,10 +25,13 @@ function Footer() {
 					padding: '4rem 15px',
 					marginInline: 'auto',
 					display: 'flex',
-					justifyContent: 'space-between',
+					justifyContent: {xs:'center',xmd:'space-between'},
+					gap: '2rem',
+					flexWrap:'wrap',
 					maxWidth: '1200px',
+					
 				}}>
-				<Typography sx={{}}>
+				<Typography>
 					&#169; 2023 - {currentYear.getFullYear()} Shawky Sobhy
 				</Typography>
 				<Box
@@ -37,6 +40,7 @@ function Footer() {
 						alignItems: 'center',
 						gap: '1rem',
 						flexWrap: 'wrap',
+						order:{xs:'-1',xmd:'1'}
 					}}>
 					{' '}
 					<Link href={`${CONTACT.ruesme}`} target='_blank'>

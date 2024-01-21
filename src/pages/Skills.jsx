@@ -21,20 +21,21 @@ function Skills() {
 			sx={{
 				backgroundImage:
 					'conic-gradient(from -90deg at 110% 100%,#2b303b 0deg,#16181d 90deg,#16181d 1turn)',
+				paddingInline: { xs: '1.5rem', xmd: '4rem', lg: '8rem' },
+				paddingBlock: { xs: '4rem', md: '8rem' },
 			}}>
 			<Box
 				sx={{
 					display: 'flex',
 					flexDirection: 'column',
 					marginInline: 'auto',
-					paddingBlock:{xs:'4rem',md:'8rem'},
 					minHeight: { xs: '70vh', md: '100vh' },
 					maxWidth: '1200px',
 					gap: '3rem',
 					alignItems: mdScreen ? 'center' : 'flex-start',
 				}}>
-				<HeroText customsx={{ paddingInline: '1rem' }}>
-					Skils & Technologies
+				<HeroText>
+					Skills
 				</HeroText>
 				<SkillsList skills={skillsList} />
 				<Box sx={{ padding: '3rem 1rem', width: '100%' }}>

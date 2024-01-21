@@ -9,6 +9,7 @@ function HeroText({ children, customsx }) {
 					color: theme.palette.gray.main,
 					backgroundColor: theme.palette.selection.main,
 				},
+				
 				color: 'white',
 				fontSize: '88px',
 				textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)', // Adjust values for your desired shadow
@@ -20,8 +21,7 @@ function HeroText({ children, customsx }) {
 					width: '100%',
 				},
 				[theme.breakpoints.down('sm')]: {
-					fontSize: '45px',
-					textAlign: 'center',
+					fontSize: '50px',
 				},
 			}}>
 			{children}

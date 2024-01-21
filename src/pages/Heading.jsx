@@ -10,7 +10,7 @@ function Heading() {
 			sx={{
 				minHeight: '95vh',
 				backgroundImage:
-'conic-gradient(from -90deg at 110% 100%,#2b303b 0deg,#16181d 90deg,#16181d 1turn)',
+					'conic-gradient(from -90deg at 110% 100%,#2b303b 0deg,#16181d 90deg,#16181d 1turn)',
 
 				display: 'flex',
 				flexDirection: 'column',
@@ -28,7 +28,10 @@ function Heading() {
 					maxWidth: '1200px',
 					marginInline: 'auto',
 				}}>
-				<HeroText customsx={{ paddingInline: '1rem' }}>
+				<HeroText
+					customsx={{
+						paddingInline: { xs: '1.5rem', xmd: '4rem', lg: '8rem' },
+					}}>
 					Nice to meet you! I&apos;m{' '}
 					<span
 						style={{
