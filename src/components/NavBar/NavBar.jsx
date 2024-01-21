@@ -21,9 +21,9 @@ function NavBar() {
 				display: 'flex',
 				justifyContent: 'space-between',
 				alignItems: 'center',
-				width: {xs:'100%',md:'90%'},
-				flexDirection:{xs:'column',sm:'row'},
-				flexWrap:{xs:'wrap',xmd:'nowrap'}
+				width: { xs: '100%', md: '90%' },
+				flexDirection: { xs: 'column', sm: 'row' },
+				flexWrap: { xs: 'wrap', xmd: 'nowrap' },
 			}}>
 			<Typography
 				sx={{
@@ -38,7 +38,7 @@ function NavBar() {
 				<NavBarItem contactData={'mailto:shawkysobhy98@gmail.com'}>
 					<AlternateEmailIcon sx={IconStyle} />
 				</NavBarItem>
-				<NavBarItem contactData={CONTACT.phone1}>
+				<NavBarItem contactData={`tel:${CONTACT.phone1}`}>
 					<PhoneInTalkIcon sx={IconStyle} />
 				</NavBarItem>
 				<NavBarItem contactData={CONTACT.linkedIn}>

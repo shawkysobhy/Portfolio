@@ -8,7 +8,10 @@ function Heading() {
 	return (
 		<Box
 			sx={{
-				minHeight: '100vh',
+				minHeight: '95vh',
+				backgroundImage:
+'conic-gradient(from -90deg at 110% 100%,#2b303b 0deg,#16181d 90deg,#16181d 1turn)',
+
 				display: 'flex',
 				flexDirection: 'column',
 				marginInline: 'auto',

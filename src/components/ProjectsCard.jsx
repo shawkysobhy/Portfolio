@@ -65,7 +65,7 @@ function ProjectsCard({
 						</Box>
 					))}
 				</Box>
-				<Typography sx={{ fontWeight: '400', lineHeight: '1.5' }}>
+				<Typography sx={{ fontWeight: '400', lineHeight: '2' }}>
 					{projectDesc}
 				</Typography>
 				{links?.length && (

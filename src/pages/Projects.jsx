@@ -11,6 +11,9 @@ function Projects() {
 				minHeight: '100vh',
 				paddingTop: '1rem',
 				maxWidth: '1500px',
+				paddingBlock: { xs: '4rem', md: '8rem' },
+				backgroundImage:
+					'conic-gradient(from 90deg at -10% 100%,#2b303b 0deg,#2b303b 90deg,#16181d 1turn)',
 				width: '100%',
 				marginInline: 'auto',
 				paddingInline: '1rem',

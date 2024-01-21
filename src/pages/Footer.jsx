@@ -5,7 +5,8 @@ function Footer() {
 	return (
 		<Box
 			sx={{
-				backgroundColor: '#0d1118',
+				backgroundImage:
+					'conic-gradient(from -90deg at 110% 100%,#2b303b 0deg,#16181d 90deg,#16181d 1turn)',
 				marginInline: 'auto',
 				width: '100vw',
 				maxWidth: '100%',
@@ -32,7 +33,8 @@ function Footer() {
 							textAlign: { xs: 'center', md: 'left' },
 						}}>
 						I would love to hear about your project and how I could help. Please
-						fill free to use any method to reach me, and I’ll get back to you as soon as possible.
+						fill free to use any method to reach me, and I’ll get back to you as
+						soon as possible.
 					</Typography>
 				</Box>
 				<Box sx={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -76,7 +78,7 @@ function Footer() {
 								Phone : {CONTACT.phone2}
 							</Typography>
 						</Link>
-						<Link href='https://github.com/shawkysobhy/' target="_blank">
+						<Link href='https://github.com/shawkysobhy/' target='_blank'>
 							<Typography sx={{ fontSize: '25px', color: '#fff' }}>
 								Github
 							</Typography>
