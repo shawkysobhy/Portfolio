@@ -1,9 +1,9 @@
 import CONTACT from '../../data/contactData';
 import { Typography, Box, List } from '@mui/material';
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import MailIcon from '@mui/icons-material/Mail';
 import NavBarItem from './NavBarItem';
 const IconStyle = {
 	width: '30px',
@@ -36,7 +36,7 @@ function NavBar() {
 			</Typography>
 			<List sx={{ display: 'flex' }}>
 				<NavBarItem contactData={'mailto:shawkysobhy98@gmail.com'}>
-					<AlternateEmailIcon sx={IconStyle} />
+					<MailIcon sx={IconStyle} />
 				</NavBarItem>
 				<NavBarItem contactData={`tel:${CONTACT.phone1}`}>
 					<PhoneInTalkIcon sx={IconStyle} />

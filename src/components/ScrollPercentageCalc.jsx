@@ -16,7 +16,7 @@ const ScrollPercentageCalculator = ({ children }) => {
 		display: 'flex',
 		alignItems: 'center',
 		zIndex: '100',
-		background: 'linear-gradient(137deg,#2d595f 0%,#944c61 100%)',
+		background: 'linear-gradient(137deg,#357c82 0%,#9b4041 100%)',
 	});
 
 	useEffect(() => {
@@ -36,9 +36,17 @@ const ScrollPercentageCalculator = ({ children }) => {
 	return (
 		<div>
 			<div style={lineStyle}>
-				<span style={{ color: '#fff', fontSize: '18px',fontWeight:'500',paddingInline:'5px' }}>
-					{scrollPercentage.toFixed(2)}%
-				</span>
+				{scrollPercentage!==0 && (
+					<span
+						style={{
+							color: '#fff',
+							fontSize: '18px',
+							fontWeight: '500',
+							paddingInline: '5px',
+						}}>
+						{scrollPercentage.toFixed(2)}%
+					</span>
+				)}
 			</div>
 			{children}
 		</div>
