@@ -1,10 +1,10 @@
 import { Box, Button } from '@mui/material';
 import HeroText from '../components/Typography/HeroText';
-import { projectKeywords } from '../Mock/skillsList';
+// import { projectKeywords } from '../Mock/skillsList';
 import { PROJECTS } from '../data/projects';
 import ProjectsCard from '../components/ProjectsCard';
 function Projects() {
-	const filterKeyword = Object.values(projectKeywords);
+	// const filterKeyword = Object.values(projectKeywords);
 	return (
 		<Box
 			sx={{
@@ -34,7 +34,7 @@ function Projects() {
 						flexWrap: 'wrap',
 						marginTop: '1rem',
 					}}>
-					<Box
+					{/* <Box
 						sx={{
 							cursor: 'not-allowed',
 							border: '2px solid white',
@@ -49,8 +49,8 @@ function Projects() {
 							userSelect: 'none',
 						}}>
 						Filter&#8605;
-					</Box>
-					{filterKeyword.map((keyword) => (
+					</Box> */}
+					{/* {filterKeyword.map((keyword) => (
 						<Box
 							sx={{
 								cursor: 'not-allowed',
@@ -71,7 +71,7 @@ function Projects() {
 							key={keyword}>
 							{keyword}
 						</Box>
-					))}
+					))} */}
 				</Box>
 				<Box
 					sx={{
